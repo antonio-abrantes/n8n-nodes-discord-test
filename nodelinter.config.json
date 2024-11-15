@@ -1,0 +1,16 @@
+{
+    "target": "./src/nodes/Discord",
+    "patterns": [".node.ts"],
+    "sortMethod": "lineNumber",
+    "truncateExcerpts": {
+      "enabled": false
+    },
+    "lintings": {
+      "PARAM_DESCRIPTION_MISSING_WHERE_OPTIONAL": {
+        "enabled": false
+      },
+      "MISMATCHED_NONOAUTH_CREDENTIALS_TEST_METHOD_REFERENCE": {
+        "enabled": false
+      }
+    }
+  }
