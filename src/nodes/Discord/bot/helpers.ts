@@ -165,6 +165,7 @@ export const triggerWorkflow = async (
       `${baseUrl}/webhook${state.testMode ? '-test' : ''}/${webhookId}/webhook`,
       {
         content: message?.content,
+        guild: message?.guild,
         channelId: message?.channelId ?? channelId,
         placeholderId,
         userId: message?.author.id ?? user?.id,

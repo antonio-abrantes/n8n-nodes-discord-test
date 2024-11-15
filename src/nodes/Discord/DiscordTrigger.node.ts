@@ -127,6 +127,7 @@ export class DiscordTrigger implements INodeType {
     const executionId = this.getExecutionId()
     const input = this.getInputData()
     const credentials = (await this.getCredentials('discordApi')) as any as ICredentials
+    const guild = input[0].json?.guild
     const placeholderId = input[0].json?.placeholderId as string
     const channelId = input[0].json?.channelId as string
     const userId = input[0].json?.userId as string
@@ -150,6 +151,7 @@ export class DiscordTrigger implements INodeType {
     returnData.push({
       json: {
         content,
+        guild,
         channelId,
         userId,
         userName,

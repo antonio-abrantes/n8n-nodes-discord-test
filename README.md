@@ -12,7 +12,7 @@ These nodes do not use webhooks but a Discord bot to enable two-way communicatio
 
 1. Go to **Settings > Community Nodes**.
 2. Select **Install**.
-3. Enter `@kmcbride3/n8n-nodes-discord` in **Enter npm package name**.
+3. Enter `@tonilab/n8n-nodes-discord-custom` in **Enter npm package name**.
 4. Agree to the [risks](https://docs.n8n.io/integrations/community-nodes/risks/) of using community nodes: select **I understand the risks of installing unverified code from a public source**.
 5. Select **Install**.
 
@@ -22,11 +22,11 @@ After installing the node, you can use it like any other node. n8n displays the 
 
 To get started install the package in your n8n root directory:
 
-`npm install @kmcbride3/n8n-nodes-discord`
+`npm install @tonilab/n8n-nodes-discord-custom`
 
 For Docker-based deployments, add the following line before the font installation command in your [n8n Dockerfile](https://github.com/n8n-io/n8n/blob/master/docker/images/n8n/Dockerfile):
 
-`RUN cd /usr/local/lib/node_modules/n8n && npm install @kmcbride3/n8n-nodes-discord`
+`RUN cd /usr/local/lib/node_modules/n8n && npm install @tonilab/n8n-nodes-discord-custom`
 
 ## Bot setup
 
